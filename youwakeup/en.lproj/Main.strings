@@ -1,0 +1,12 @@
+
+/* Class = "UITabBarItem"; title = "MUSIC "; ObjectID = "AwX-Wa-HGB"; */
+"AwX-Wa-HGB.title" = "MUSIC ";
+
+/* Class = "UITabBarItem"; title = "Item 2"; ObjectID = "EFG-3h-6Cg"; */
+"EFG-3h-6Cg.title" = "Item 2";
+
+/* Class = "UILabel"; text = "          WELCOME TO YOUWAKEUP"; ObjectID = "LnB-lg-bRc"; */
+"LnB-lg-bRc.text" = "          WELCOME TO YOUWAKEUP";
+
+/* Class = "UIButton"; normalTitle = "video"; ObjectID = "Mz0-V4-ozQ"; */
+"Mz0-V4-ozQ.normalTitle" = "video";
