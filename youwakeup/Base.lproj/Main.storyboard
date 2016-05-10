@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7XN-wH-0xQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7XN-wH-0xQ">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -155,7 +155,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="9no-Xt-ZqK">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jxK-SE-9Yi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="7XN-wH-0xQ" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="4eN-N4-fs0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -167,6 +166,7 @@
                         <segue destination="VYm-Y3-f4d" kind="relationship" relationship="viewControllers" id="RBU-Dv-p0J"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxK-SE-9Yi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-626" y="-854"/>
         </scene>
