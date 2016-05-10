@@ -40,7 +40,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="          WELCOME TO YOUWAKEUP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LnB-lg-bRc">
                                 <rect key="frame" x="153" y="20" width="295" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -112,12 +112,14 @@
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Cs-aF-a3b">
                                 <rect key="frame" x="398" y="417" width="75" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="START">
                                     <color key="titleColor" red="0.27170333520000001" green="0.48374275839999997" blue="0.3450280154" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3m-Rs-4Pf">
                                 <rect key="frame" x="157" y="417" width="72" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="STOP">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -131,10 +133,17 @@
                                     <!--2016-05-09 21:31:24 +0000-->
                                 </date>
                             </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3g-gW-EA5">
+                                <rect key="frame" x="264" y="379" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="NeN-Bx-Rp5" firstAttribute="top" secondItem="CWw-hW-Pc2" secondAttribute="bottom" id="ABk-7d-jPr"/>
+                            <constraint firstItem="M3g-gW-EA5" firstAttribute="top" secondItem="NEi-7u-5D6" secondAttribute="bottom" constant="32" id="Avp-P1-OQA"/>
                             <constraint firstItem="F3m-Rs-4Pf" firstAttribute="leading" secondItem="Fnq-o0-lxL" secondAttribute="leadingMargin" constant="80" id="Ew8-wf-eYU"/>
                             <constraint firstItem="NEi-7u-5D6" firstAttribute="top" secondItem="NeN-Bx-Rp5" secondAttribute="bottom" id="QKO-29-jbv"/>
                             <constraint firstItem="NEi-7u-5D6" firstAttribute="trailing" secondItem="NeN-Bx-Rp5" secondAttribute="trailing" id="QdB-DB-IOZ"/>
@@ -142,6 +151,7 @@
                             <constraint firstItem="NEi-7u-5D6" firstAttribute="leading" secondItem="NeN-Bx-Rp5" secondAttribute="leading" id="VUo-Pb-Xif"/>
                             <constraint firstItem="NeN-Bx-Rp5" firstAttribute="leading" secondItem="Fnq-o0-lxL" secondAttribute="leading" id="ka2-qk-2ZJ"/>
                             <constraint firstItem="UuZ-sp-UCS" firstAttribute="top" secondItem="F3m-Rs-4Pf" secondAttribute="bottom" constant="104" id="oCC-zB-7Gk"/>
+                            <constraint firstItem="M3g-gW-EA5" firstAttribute="centerX" secondItem="NEi-7u-5D6" secondAttribute="centerX" id="ri4-fy-ZmW"/>
                             <constraint firstItem="UuZ-sp-UCS" firstAttribute="top" secondItem="4Cs-aF-a3b" secondAttribute="bottom" constant="104" id="ruT-39-CKO"/>
                             <constraint firstAttribute="trailing" secondItem="NEi-7u-5D6" secondAttribute="trailing" id="sZ2-zf-B5A"/>
                         </constraints>
@@ -155,7 +165,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="9no-Xt-ZqK">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jxK-SE-9Yi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="7XN-wH-0xQ" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="4eN-N4-fs0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -167,6 +176,7 @@
                         <segue destination="VYm-Y3-f4d" kind="relationship" relationship="viewControllers" id="RBU-Dv-p0J"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxK-SE-9Yi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-626" y="-854"/>
         </scene>
