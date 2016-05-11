@@ -72,7 +72,7 @@
         <!--Alarm Clock-->
         <scene sceneID="BSA-eb-5AP">
             <objects>
-                <viewController id="VYm-Y3-f4d" userLabel="Alarm Clock" sceneMemberID="viewController">
+                <viewController id="VYm-Y3-f4d" userLabel="Alarm Clock" customClass="TimerViewController" customModule="youwakeup" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CWw-hW-Pc2"/>
                         <viewControllerLayoutGuide type="bottom" id="UuZ-sp-UCS"/>
