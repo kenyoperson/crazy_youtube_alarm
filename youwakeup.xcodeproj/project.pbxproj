@@ -484,6 +484,7 @@
 				018A5A7D1CD406BC0069151D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		018A5A7E1CD406BC0069151D /* Build configuration list for PBXNativeTarget "youwakeupTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +493,7 @@
 				018A5A801CD406BC0069151D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		018A5A811CD406BC0069151D /* Build configuration list for PBXNativeTarget "youwakeupUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +502,7 @@
 				018A5A831CD406BC0069151D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
