@@ -14,7 +14,7 @@
 		018A5A611CD406BC0069151D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018A5A5F1CD406BC0069151D /* LaunchScreen.storyboard */; };
 		018A5A6C1CD406BC0069151D /* youwakeupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018A5A6B1CD406BC0069151D /* youwakeupTests.swift */; };
 		018A5A771CD406BC0069151D /* youwakeupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018A5A761CD406BC0069151D /* youwakeupUITests.swift */; };
-		01DAC0F41CE3C71E00B5E40B /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DAC0F31CE3C71E00B5E40B /* TimerViewController.swift */; };
+		3E9C62A41CE260750058657B /* AlarmCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9C62A31CE260750058657B /* AlarmCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		018A5A721CD406BC0069151D /* youwakeupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = youwakeupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		018A5A761CD406BC0069151D /* youwakeupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = youwakeupUITests.swift; sourceTree = "<group>"; };
 		018A5A781CD406BC0069151D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01DAC0F31CE3C71E00B5E40B /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		3E9C62A31CE260750058657B /* AlarmCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlarmCode.swift; path = ../AlarmCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +101,7 @@
 			children = (
 				018A5A561CD406BC0069151D /* AppDelegate.swift */,
 				018A5A581CD406BC0069151D /* ViewController.swift */,
+				3E9C62A31CE260750058657B /* AlarmCode.swift */,
 				018A5A5A1CD406BC0069151D /* Main.storyboard */,
 				01DAC0F31CE3C71E00B5E40B /* TimerViewController.swift */,
 				018A5A5D1CD406BC0069151D /* Assets.xcassets */,
@@ -262,6 +263,7 @@
 				018A5A591CD406BC0069151D /* ViewController.swift in Sources */,
 				01DAC0F41CE3C71E00B5E40B /* TimerViewController.swift in Sources */,
 				018A5A571CD406BC0069151D /* AppDelegate.swift in Sources */,
+				3E9C62A41CE260750058657B /* AlarmCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
