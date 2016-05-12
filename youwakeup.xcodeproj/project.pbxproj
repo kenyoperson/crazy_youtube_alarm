@@ -103,6 +103,7 @@
 				018A5A581CD406BC0069151D /* ViewController.swift */,
 				3E9C62A31CE260750058657B /* AlarmCode.swift */,
 				018A5A5A1CD406BC0069151D /* Main.storyboard */,
+				01DAC0F31CE3C71E00B5E40B /* TimerViewController.swift */,
 				018A5A5D1CD406BC0069151D /* Assets.xcassets */,
 				018A5A5F1CD406BC0069151D /* LaunchScreen.storyboard */,
 				018A5A621CD406BC0069151D /* Info.plist */,
@@ -260,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				018A5A591CD406BC0069151D /* ViewController.swift in Sources */,
+				01DAC0F41CE3C71E00B5E40B /* TimerViewController.swift in Sources */,
 				018A5A571CD406BC0069151D /* AppDelegate.swift in Sources */,
 				3E9C62A41CE260750058657B /* AlarmCode.swift in Sources */,
 			);
