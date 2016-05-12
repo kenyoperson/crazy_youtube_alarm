@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7XN-wH-0xQ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -116,6 +116,9 @@
                                 <state key="normal" title="START">
                                     <color key="titleColor" red="0.27170333520000001" green="0.48374275839999997" blue="0.3450280154" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButton:" destination="VYm-Y3-f4d" eventType="touchUpInside" id="9QO-6g-514"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3m-Rs-4Pf">
                                 <rect key="frame" x="157" y="417" width="72" height="30"/>
@@ -157,6 +160,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Alarm Clock" id="mat-sa-IbU"/>
+                    <connections>
+                        <outlet property="timerLabel" destination="M3g-gW-EA5" id="S9W-wf-NLA"/>
+                        <outlet property="timerPicker" destination="NEi-7u-5D6" id="IcO-be-Xtn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0q9-ah-gyY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,7 +180,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="kTv-od-5TS"/>
-                        <segue destination="VYm-Y3-f4d" kind="relationship" relationship="viewControllers" id="RBU-Dv-p0J"/>
+                        <segue destination="VYm-Y3-f4d" kind="relationship" relationship="viewControllers" id="Hpf-oN-4zH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jxK-SE-9Yi" userLabel="First Responder" sceneMemberID="firstResponder"/>
