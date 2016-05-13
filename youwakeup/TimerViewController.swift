@@ -19,6 +19,7 @@ class TimerViewController: UIViewController {
         super.viewDidLoad()
         
         timerPicker.addTarget(self, action: Selector("timerPickerChanged:"), forControlEvents: UIControlEvents.ValueChanged)
+        
     
         // Do any additional setup after loading the view.
     }
@@ -42,7 +43,7 @@ class TimerViewController: UIViewController {
     func timerPickerChanged(timerPicker:UIDatePicker) {
         var timerFormat = NSDateFormatter()
         
-        timerFormat.dateStyle = NSDateFormatterStyle.NoStyle
+        timerFormat.dateStyle = NSDateFormatterStyle.ShortStyle
         timerFormat.timeStyle = NSDateFormatterStyle.ShortStyle
         
         var strDate = timerFormat.stringFromDate(timerPicker.date)
@@ -52,7 +53,6 @@ class TimerViewController: UIViewController {
     }
     
     @IBAction func startButton(sender: AnyObject) {
-        let date = NSDate().dateByAddingTimeInterval(1)
         let timerDate = NSTimer(fireDate: timerPicker.date, interval: 0, target: self, selector: "timeLabel", userInfo: nil, repeats: false)
         NSRunLoop.mainRunLoop().addTimer(timerDate, forMode: NSRunLoopCommonModes)
     }
