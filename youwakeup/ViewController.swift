@@ -10,15 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var testLabel: UILabel!
+    @IBOutlet weak var websiteUrlInput: UITextField!
+    
     @IBOutlet weak var videoView: UIWebView!
     
     
     
     override func viewDidLoad() {
+        
+    var videoLink = websiteUrlInput.text
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let url = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/237603952&amp&auto_play=true"
+        let url = "https://www.google.com"
         
         videoView.allowsInlineMediaPlayback = true
         
@@ -34,7 +40,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func openVideo(sender: AnyObject) {
-        if let url = NSURL(string: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/237603952&amp&auto_play=true") {
+        if let url = NSURL(string: "https://www.google.com") {
             let request = NSURLRequest(URL: url)
             videoView.loadRequest(request)
             
@@ -43,6 +49,14 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func WebsiteUrlAction(sender: AnyObject) {
+        
+        if let input = websiteUrlInput.text {
+            websiteUrlInput.text = input
+        }
+
+        
+    }
 
 }
 
