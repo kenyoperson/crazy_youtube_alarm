@@ -39,6 +39,7 @@ class ViewController: UIViewController {
             videoView.loadRequest(request)
             
             
+            
         }
     }
     

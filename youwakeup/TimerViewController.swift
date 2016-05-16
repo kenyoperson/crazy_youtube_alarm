@@ -59,6 +59,8 @@ class TimerViewController: UIViewController {
     
     func timeLabel() {
         timerLabel.text = "ye"
+        
+        
     }
     
     
