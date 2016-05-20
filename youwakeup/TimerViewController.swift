@@ -11,6 +11,7 @@ import UIKit
 class TimerViewController: UIViewController {
     
     
+    
     @IBOutlet weak var timerLabel: UILabel!
 
     @IBOutlet weak var timerPicker: UIDatePicker!
@@ -53,14 +54,25 @@ class TimerViewController: UIViewController {
     }
     
     @IBAction func startButton(sender: AnyObject) {
+        
+        
         let timerDate = NSTimer(fireDate: timerPicker.date, interval: 0, target: self, selector: "timeLabel", userInfo: nil, repeats: false)
         NSRunLoop.mainRunLoop().addTimer(timerDate, forMode: NSRunLoopCommonModes)
+        timerLabel.text = "Alarm Set"
     }
     
+    @IBAction func stopButton(sender: AnyObject) {
+        
+    }
+    
+    
     func timeLabel() {
-        timerLabel.text = "ye"
+        timerLabel.text = "Alarm Triggered"
+        let alertController = UIAlertController(title: "Time to Wake Up!", message:
+            "Play your music", preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
         
-        
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
     
