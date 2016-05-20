@@ -69,10 +69,8 @@ class TimerViewController: UIViewController {
     
     
     func timeLabel() {
-        timerLabel.text = "Alarm Triggered"
-        let alertController = UIAlertController(title: "Time to Wake Up!", message:
-            "Play your music", preferredStyle: UIAlertControllerStyle.Alert)
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+        timerLabel.text = "ye"
+        music.play()
         
         self.presentViewController(alertController, animated: true, completion: nil)
     }
