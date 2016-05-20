@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import MediaPlayer
 
 class TimerViewController: UIViewController {
     
+    let music = MPMusicPlayerController()
     
     @IBOutlet weak var timerLabel: UILabel!
 
@@ -59,7 +61,7 @@ class TimerViewController: UIViewController {
     
     func timeLabel() {
         timerLabel.text = "ye"
-        
+        music.play()
         
     }
     
