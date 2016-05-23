@@ -13,6 +13,7 @@ class TimerViewController: UIViewController {
     
     let music = MPMusicPlayerController()
     
+    
     @IBOutlet weak var timerLabel: UILabel!
 
     @IBOutlet weak var timerPicker: UIDatePicker!
@@ -55,14 +56,23 @@ class TimerViewController: UIViewController {
     }
     
     @IBAction func startButton(sender: AnyObject) {
+        
+        
         let timerDate = NSTimer(fireDate: timerPicker.date, interval: 0, target: self, selector: "timeLabel", userInfo: nil, repeats: false)
         NSRunLoop.mainRunLoop().addTimer(timerDate, forMode: NSRunLoopCommonModes)
+        timerLabel.text = "Alarm Set"
     }
+    
+    @IBAction func stopButton(sender: AnyObject) {
+        
+    }
+    
     
     func timeLabel() {
         timerLabel.text = "ye"
         music.play()
         
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
     
     
